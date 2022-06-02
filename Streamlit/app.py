@@ -7,7 +7,7 @@ import pandas as pd
 model = pickle.load(open('mainmodel.pkl', 'rb'))
 #------------MAIN CODE------------------
 def predictions(sex,cp,trestbps,fbs,restecg,thalach,exang,slope,ca,thal,oldpeak,age,chol):
-    prediction=int(model.predict([[sex,cp,trestbps,fbs,restecg,thalach,exang,slope,ca,thal,oldpeak,age,chol]]))
+    prediction=model.predict([[sex,cp,trestbps,fbs,restecg,thalach,exang,slope,ca,thal,oldpeak,age,chol]])
     if prediction == 0:
         return "No Presence of heart dissease"
     else:
@@ -15,32 +15,20 @@ def predictions(sex,cp,trestbps,fbs,restecg,thalach,exang,slope,ca,thal,oldpeak,
     
 def main():
     st.title("Heart Dissease Prediction Streamlit Version")
-    sex = st.text_input('sex',"Enter Numerical Values")
-    cp = st.text_input('cp',"Enter Numerical Values")
-    trestbps = st.text_input('trestbps',"Enter Numerical Values")
-    age = st.text_input('age',"Enter Numerical Values")
-    oldpeak = st.text_input('oldpeak',"Enter Numerical Values")
-    exang = st.text_input('exang',"Enter Numerical Values")
-    fbs = st.text_input('fbs',"Enter Numerical Values")
-    restecg = st.text_input('restecg',"Enter Numerical Values")
-    thalach = st.text_input('thalach',"Enter Numerical Values")
-    slope = st.text_input('slope',"Enter Numerical Values")
-    thal = st.text_input('thal',"Enter Numerical Values")
-    chol = st.text_input('chol',"Enter Numerical Values")
-    ca = st.text_input('ca',"Enter Numerical Values")
-    sex = int(sex)
-    cp = int(cp)
-    trestbps = int(trestbps)
-    age = int(age)
-    oldpeak = float(oldpeak)
-    exang = int(exang)
-    fbs = int(fbs)
-    restecg = int(restecg)
-    thalach = int(thalach)
-    slope = int(slope)
-    thal = int(thal)
-    chol = int(chol)
-    ca =int(ca)
+    sex = st.number_input('sex')
+    cp = st.number_input('cp')
+    trestbps = st.number_input('trestbps')
+    age = st.number_input('age')
+    oldpeak = st.number_input('oldpeak')
+    exang = st.number_input('exang')
+    fbs = st.number_input('fbs')
+    restecg = st.number_input('restecg')
+    thalach = st.number_input('thalach')
+    slope = st.number_input('slope')
+    thal = st.number_input('thal')
+    chol = st.number_input('chol')
+    ca = st.number_input('ca')
+
     # ----------- age -------------
     if(age>=28.952 and age<45.0):
         age = 1
@@ -132,5 +120,5 @@ def main():
         result=predictions(sex,cp,trestbps,fbs,restecg,thalach,exang,slope,ca,thal,oldpeak,age,chol)
         st.success(result)
     
-if __name__ == "__main__":
+if __name__=='__main__':
     main()
