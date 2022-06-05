@@ -68,7 +68,7 @@ def main():
         <p>Age Categorization p>
         <p>1. adult => 28.952, 45.0</p>
         <p>2. old => 45.0, 61.0</p>
-        <p>3. senior => 61.0, 77.0                                                              </p>
+        <p>3. senior => 61.0, 77.0</p>
         <p></p>
         <br>
 
