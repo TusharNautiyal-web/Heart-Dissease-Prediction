@@ -24,6 +24,19 @@
         .formbox{
             border: 2px dotted black;
         }
+        @media (orientation: landscape) {
+            img {
+              position: absolute;
+              left: 47%;
+              top: 6%;
+            }
+          }
+          
+            @media (orientation: portrait) {
+              img{
+              margin-top: -80px; 
+              margin-left: 40px; position: absolute; left: 30%;    
+            }
 
     </style>
     <body>
@@ -106,8 +119,7 @@
             <div class="row justify-content-md-center">
 
                 <div  class="col col-lg-2">
-                    <img src = 'https://www.rksmc.com/heart.gif' style = 'margin-top: -100px; margin-left: -40px;' width = '400px' height = '100px'></img>
-
+                    <img src = 'https://i.gifer.com/nUn.gif'  width = '100px' height = '100px'></img>
           <label>
             <span>Select Sex</span>
             <select name="sex" required="required">
