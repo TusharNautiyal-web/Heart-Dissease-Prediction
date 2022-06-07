@@ -11,32 +11,43 @@ Please Understand that the main app(The first app.py you see in the file) is of 
 Other Then That all other frameworks files are in their seperate folders
 
 **Watch Full Video On It On Youtube** :
-```html
-<iframe src = 'https://script.google.com/macros/s/AKfycbxZJ99-LhaON8PP29di6rD68xU_JxHOpMR8GlTaAPHxEvSuCmv9FVJxAraxgO7REqTC/exec'>
-</iframe>
+# Execute Each of them by going into each of thier directory.
+
+**Flask**
+```python
+python app.py
 ```
-<h1>Enter Your Feedback<h1>
+**Py-script**
+```python
+# Just run it using live server
+```
+**Streamlit**
+```python
+streamlit run app.py
+```
+**Fast Api**
+```python
+uvicorn app:app --reload
+```
 
 # Ratings for Framework
   1. Flask
-      Speed
-      Ease
-      Features
+      1. Speed
+      2. Ease
+      3. Features
   2. Py-script
-      Speed
-      Ease
-      Features
+      1. Speed
+      2. Ease
+      3. Features
   3. Streamlit
-      Speed
-      Ease
-      Features
-  
+      1. Speed
+      2. Ease
+      3. Features
   4. Django
-      Speed
-      Ease
-      Features
-  
+      1. Speed
+      2. Ease
+      3. Features
   5. Fast Api
-      Speed
-      Ease
-      Features
+      1. Speed
+      2. Ease
+      3. Features
