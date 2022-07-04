@@ -1,5 +1,5 @@
 # 1-Machine-Learning-Project-5-frameworks
-<img  src = 'https://img.shields.io/badge/Framework-Streamlit.svg'/> <img  src = 'https://img.shields.io/badge/Framework-Flask'/> <img src = 'https://img.shields.io/badge/Framework-Django-Orange.svg'/><img src = 'https://img.shields.io/badge/Language-PyScript-Orange.svg'/><img src = 'https://img.shields.io/badge/Language-Python-Orange.svg'/>
+<img  src = 'https://img.shields.io/badge/Framework-Streamlit-green.svg'/> <img  src = 'https://img.shields.io/badge/Framework-Flask-Green.svg'/> <img src = 'https://img.shields.io/badge/Framework-Django-Orange.svg'/><img src = 'https://img.shields.io/badge/Language-PyScript-Orange.svg'/><img src = 'https://img.shields.io/badge/Language-Python-Orange.svg'/>
 This Project is for Heart Dissease Prediction and it is deployed using 5 diffrent Frameworks
 1. Flask
 2. Py-script
