@@ -52,6 +52,3 @@ uvicorn app:app --reload
       2. Ease 5
       3. Features 4
       
-# Watch Video
-<video src="https://www.youtube.com/embed/KNdFkhBF9eo" data-canonical-src="https://www.youtube.com/embed/KNdFkhBF9eo" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px;">
-  </video>
